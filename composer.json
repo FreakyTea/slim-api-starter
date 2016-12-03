@@ -1,0 +1,26 @@
+{
+    "name": "npx/slim-api-starter",
+    "description": "Quickly get your API started with the Slim Framework.",
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "vlucas/phpdotenv": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8 < 6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S 0.0.0.0:8000 -t public",
+        "test": "phpunit"
+    }
+}
